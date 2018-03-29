@@ -39,13 +39,11 @@ header .headerTop .socialIcons i {
   margin-right: 10px;
 }
 header .headerTop .miniMenu {
-  width: 50%;
   font-family: Georgia;
   font-size: 12px;
   font-weight: 400;
   line-height: 14.4px;
   text-align: left;
-  width: 253px;
   height: 13px;
 }
 header .headerTop .miniMenu li {
@@ -104,9 +102,6 @@ main .grid .menu li {
   height: 9px;
   margin-right: 31px;
 }
-main .grid #carousel-example-generic {
-  height: 350px;
-}
 main .grid .bigTitle {
   margin: 40px auto;
 }
@@ -130,13 +125,14 @@ main .grid .preview .imgPreview {
 main .grid .twoArticles {
   display: grid;
   grid-template: 50px 200px / 1fr 1fr;
-  grid-template-areas: "smallHeader smallHeader2" "article articleQuote";
+  grid-template-areas: "smallHeader smallHeader2" "article articalQuote";
 }
 main .grid .twoArticles .smallHeader {
   grid-area: smallHeader;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  margin: auto;
 }
 main .grid .twoArticles .smallHeader img {
   width: 150px;
@@ -162,6 +158,7 @@ main .grid .twoArticles .smallHeader2 {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  margin: auto;
 }
 main .grid .twoArticles .smallHeader2 img {
   width: 150px;
@@ -169,4 +166,142 @@ main .grid .twoArticles .smallHeader2 img {
 }
 main .grid .twoArticles .articalQuote {
   grid-area: articalQuote;
+}
+main .grid .twoArticles .articalQuote img {
+  float: left;
+  margin-right: 5px;
+}
+main .grid .banner {
+  margin-bottom: 50px;
+  justify-content: space-around;
+  background-color: #97455f;
+  width: 900px;
+  height: 106px;
+  color: white;
+  border-radius: 10px;
+}
+main .grid .banner h3 {
+  font-family: Georgia;
+  color: #e5e5e5;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43.2px;
+  text-align: left;
+  width: 515px;
+  height: 36px;
+}
+main .grid .banner p {
+  font-family: Georgia;
+  color: #e5e5e5;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+  width: 503px;
+  height: 18px;
+}
+main .grid .banner button {
+  color: #97455f;
+  background-color: #ffffff;
+  width: 279px;
+  height: 58px;
+  border-radius: 10px;
+  float: right;
+  font-family: Georgia;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 31.2px;
+  text-align: center;
+}
+footer {
+  border-top: 5px #d2d2d2 solid;
+  height: 355px;
+  background-color: #ebebeb;
+  display: grid;
+  grid-template: 75px 120px 120px / 2fr 1fr 1fr;
+  grid-template-areas: "title1 title2 title3" "mention contacts feedback " "mention2 cntacts feedback ";
+}
+footer .title1,
+footer .title2,
+footer .title3 {
+  font-family: Georgia;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+  width: 152px;
+  height: 15px;
+}
+footer .mention img,
+footer .mention2 img {
+  margin-right: 5px;
+}
+footer .mention .mentionHeader,
+footer .mention2 .mentionHeader {
+  font-family: Georgia;
+  color: #97455f;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  width: 178px;
+  height: 12px;
+}
+footer .mention p,
+footer .mention2 p {
+  font-family: Georgia;
+  color: #999999;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+}
+footer .mention {
+  grid-area: mention;
+}
+footer .mention2 {
+  grid-area: mention2;
+}
+footer .contacts {
+  grid-area: contacts;
+  font-family: Georgia;
+  color: #999999;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+  width: 136px;
+  height: 70px;
+}
+footer .feedback {
+  grid-area: feedback;
+}
+footer .feedback input {
+  background-color: #ffffff;
+  width: 225px;
+  height: 31px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+footer .feedback textarea {
+  background-color: #ffffff;
+  width: 225px;
+  height: 110px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+footer .feedback button {
+  background-color: #97455f;
+  width: 80px;
+  height: 31px;
+  color: white;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20.583px;
+  text-align: left;
+  border-radius: 10px;
+  text-align: center;
 }
