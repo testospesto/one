@@ -31,7 +31,6 @@ header {
 
 	.headerTop {
 		width: 100%;
-		background-color: red;
 		border-bottom: 2px #97455f solid;
 
 		ul {
@@ -74,26 +73,31 @@ header {
 		align-items: center;
 		background-color: #ebebeb;
 		height: 270px;
-		input {
-			height: 33px;
-			width: 218px;
-		}
+
 
 		.input-group {
 			margin-top: -120px;
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: flex-end;
+			input {
+				height: 33px;
+				width: 218px;
+			}
+			button {
+				background-color: #97455f;
+				width: 75px;
+				height: 33px;
+				font-family: Georgia;
+				color: #ffffff;
+				font-size: 12px;
+				font-weight: 400;
+				line-height: 14.4px;
+				text-align: center;
+			}
 		}
 
-		button {
-			background-color: #97455f;
-			width: 75px;
-			height: 33px;
-			font-family: Georgia;
-			color: #ffffff;
-			font-size: 12px;
-			font-weight: 400;
-			line-height: 14.4px;
-			text-align: center;
-		}
+
 	}
 
 }
@@ -126,7 +130,8 @@ main {
 		}
 
 		.bigTitle {
-			margin-top: 40px;
+			margin: 40px auto;
+
 		}
 
 		.preview {
@@ -152,10 +157,8 @@ main {
 		}
 
 		.twoArticles {
-			display: grid;
-			//			grid-template: ~"100px 200px / 400px 400px";
-			grid-template-rows: 100px 200px;
-			grid-template-columns: 400px 400px;
+			display: grid; //			grid-template: ~"100px 200px / 400px 400px";
+			grid-template: ~"50px 200px / 1fr 1fr";
 			grid-template-areas: "smallHeader smallHeader2" "article articleQuote";
 
 			.smallHeader {
@@ -190,7 +193,7 @@ main {
 			}
 
 			.smallHeader2 {
-				grid-area: smallHeader;
+				grid-area: smallHeader2;
 				display: flex;
 				flex-direction: row;
 				flex-wrap: nowrap;
@@ -200,7 +203,6 @@ main {
 					height: 5px;
 				}
 
-				grid-area: smallHeader2;
 
 			}
 

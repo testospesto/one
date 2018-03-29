@@ -24,7 +24,6 @@ header {
 }
 header .headerTop {
   width: 100%;
-  background-color: #ffffff;
   border-bottom: 2px #97455f solid;
 }
 header .headerTop ul {
@@ -64,14 +63,17 @@ header .header .logo {
 header .header .customContainer {
   width: 100%;
 }
-header .header input {
+header .header .input-group {
+  margin-top: -120px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+header .header .input-group input {
   height: 33px;
   width: 218px;
 }
-header .header .input-group {
-  margin-top: -120px;
-}
-header .header button {
+header .header .input-group button {
   background-color: #97455f;
   width: 75px;
   height: 33px;
@@ -106,7 +108,7 @@ main .grid #carousel-example-generic {
   height: 350px;
 }
 main .grid .bigTitle {
-  margin-top: 40px;
+  margin: 40px auto;
 }
 main .grid .preview {
   display: grid;
@@ -127,8 +129,7 @@ main .grid .preview .imgPreview {
 }
 main .grid .twoArticles {
   display: grid;
-  grid-template-rows: 100px 200px;
-  grid-template-columns: 400px 400px;
+  grid-template: 50px 200px / 1fr 1fr;
   grid-template-areas: "smallHeader smallHeader2" "article articleQuote";
 }
 main .grid .twoArticles .smallHeader {
@@ -157,11 +158,10 @@ main .grid .twoArticles .article .roundPhoto {
   margin-right: 10px;
 }
 main .grid .twoArticles .smallHeader2 {
-  grid-area: smallHeader;
+  grid-area: smallHeader2;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  grid-area: smallHeader2;
 }
 main .grid .twoArticles .smallHeader2 img {
   width: 150px;
