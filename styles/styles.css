@@ -215,11 +215,11 @@ main .grid .banner button {
 }
 footer {
   border-top: 5px #d2d2d2 solid;
-  height: 355px;
   background-color: #ebebeb;
   display: grid;
-  grid-template: 75px 120px 120px / 2fr 1fr 1fr;
-  grid-template-areas: "title1 title2 title3" "mention contacts feedback " "mention2 cntacts feedback ";
+  padding: 0 20px;
+  grid-template: 75px 120px 140px 50px / 2fr 1fr 1fr;
+  grid-template-areas: "title1 title2 title3" "mention contacts feedback " "mention2 cntacts feedback " "copyright copyright copyright";
 }
 footer .title1,
 footer .title2,
@@ -301,7 +301,17 @@ footer .feedback button {
   font-size: 13px;
   font-weight: 400;
   line-height: 20.583px;
-  text-align: left;
   border-radius: 10px;
   text-align: center;
+}
+footer .copyright {
+  border-top: 1px #d2d2d2 solid;
+  grid-area: copyright;
+  width: 100%;
+  font-family: Georgia;
+  color: #999999;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.4px;
+  text-align: left;
 }
