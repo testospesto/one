@@ -82,7 +82,16 @@ header .header .input-group button {
   line-height: 14.4px;
   text-align: center;
 }
+@media all and (max-width: 991px) {
+  .headerTop {
+    display: none;
+  }
+  .header {
+    display: block;
+  }
+}
 main .grid {
+  border-radius: 10px 10px 0 0;
   background-color: white;
   margin-top: -130px;
 }
@@ -212,6 +221,23 @@ main .grid .banner button {
   font-weight: 400;
   line-height: 31.2px;
   text-align: center;
+}
+@media all and (max-width: 991px) {
+  .menu {
+    display: none;
+  }
+  .preview {
+    grid-template: 200px 200px 200px 200px 200px 200px / 1fr;
+  }
+  .preview .info {
+    justify-content: center;
+  }
+  .twoArticles {
+    grid-template-columns: 1fr;
+  }
+  .banner {
+    display: none;
+  }
 }
 footer {
   border-top: 5px #d2d2d2 solid;
