@@ -49,6 +49,11 @@ header .headerTop .miniMenu {
 header .headerTop .miniMenu li {
   color: #97455f;
 }
+@media all and (min-width: 479px) {
+  header .navbar {
+    display: none;
+  }
+}
 header .header {
   display: flex;
   align-items: center;
@@ -82,18 +87,24 @@ header .header .input-group button {
   line-height: 14.4px;
   text-align: center;
 }
-@media all and (max-width: 991px) {
+@media all and (max-width: 480px) {
   .headerTop {
     display: none;
   }
   .header {
     display: block;
   }
+  .header img {
+    margin-bottom: 10px;
+  }
 }
 main .grid {
   border-radius: 10px 10px 0 0;
   background-color: white;
   margin-top: -130px;
+}
+main .grid .title img {
+  width: 30%;
 }
 main .grid .menu {
   height: 50px;
@@ -222,7 +233,7 @@ main .grid .banner button {
   line-height: 31.2px;
   text-align: center;
 }
-@media all and (max-width: 991px) {
+@media all and (max-width: 480px) {
   .menu {
     display: none;
   }
@@ -302,7 +313,6 @@ footer .contacts {
   line-height: 19.2px;
   text-align: left;
   width: 136px;
-  height: 70px;
 }
 footer .feedback {
   grid-area: feedback;
