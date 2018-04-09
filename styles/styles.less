@@ -27,11 +27,17 @@ ul {
 	display: inline-flex;
 }
 
+.buttonHover {
+	background-color: #974559;
+	border: 1px solid #974599;
+	box-shadow: 5px 10px 5px #974579;
+}
+
 header {
 	width: 100%;
 
 	.headerTop {
-		
+
 		width: 100%;
 		border-bottom: 2px #97455f solid;
 
@@ -102,6 +108,10 @@ header {
 				font-weight: 400;
 				line-height: 14.4px;
 				text-align: center;
+				transition-duration: 1s;
+			}
+			button:hover {
+				.buttonHover;
 			}
 		}
 	}
@@ -113,7 +123,7 @@ header {
 	//	}
 	.headerTop {
 		display: none;
-		
+
 	}
 	.header {
 		display: block;
@@ -130,14 +140,14 @@ main {
 		border-radius: 10px 10px 0 0;
 		background-color: white;
 		margin-top: -130px;
-		
+
 		.title {
 			img {
 				width: 30%;
 			}
 		}
-		
-		
+
+
 		.menu {
 			height: 50px;
 			background-color: #97455f;
@@ -150,10 +160,16 @@ main {
 				font-weight: 400;
 				line-height: 12px;
 				text-align: left;
-				width: 37px;
-				height: 9px;
-				margin-right: 31px;
+				width: 67px;
+				height: 46px;
+				text-align: center;
+				transition-duration: 1s;
 			}
+
+			li:hover {
+				.buttonHover
+			}
+
 		}
 		#carousel-example-generic {
 			//			height: 350px;
@@ -377,9 +393,7 @@ footer {
 		font-weight: 400;
 		line-height: 19.2px;
 		text-align: left;
-		width: 136px;
-//		height: 70px;
-
+		width: 136px; //		height: 70px;
 	}
 	.feedback {
 		grid-area: feedback;
