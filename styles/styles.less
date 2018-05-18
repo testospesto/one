@@ -24,13 +24,21 @@
 
 ul {
 	list-style-type: none;
-	display: inline-flex;
+	display: flex;
+	height: 100%;
 }
 
 .buttonHover {
 	background-color: #974559;
 	border: 1px solid #974599;
 	box-shadow: 5px 10px 5px #974579;
+}
+
+.align {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+		
 }
 
 header {
@@ -42,6 +50,7 @@ header {
 		border-bottom: 2px #97455f solid;
 
 		ul {
+			
 			padding-left: 0;
 		}
 
@@ -66,6 +75,10 @@ header {
 			li {
 				color: #97455f;
 			}
+		}
+		.navbar-default {
+			width: 100%;
+			margin-bottom: 0;
 		}
 	}
 	@media all and (min-width:479px) {
@@ -122,7 +135,13 @@ header {
 	//		max-width: auto;
 	//	}
 	.headerTop {
-		display: none;
+		.socialIcons {
+			display: none;
+		}
+		.miniMenu {
+			display: none;
+		}
+//		display: none;
 
 	}
 	.header {
@@ -130,6 +149,7 @@ header {
 		img {
 			margin-bottom: 10px;
 		}
+		
 	}
 
 }
@@ -161,7 +181,7 @@ main {
 				line-height: 12px;
 				text-align: left;
 				width: 67px;
-				height: 46px;
+				height: 100%;
 				text-align: center;
 				transition-duration: 1s;
 			}

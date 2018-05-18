@@ -17,12 +17,18 @@
 }
 ul {
   list-style-type: none;
-  display: inline-flex;
+  display: flex;
+  height: 100%;
 }
 .buttonHover {
   background-color: #974559;
   border: 1px solid #974599;
   box-shadow: 5px 10px 5px #974579;
+}
+.align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 header {
   width: 100%;
@@ -53,6 +59,10 @@ header .headerTop .miniMenu {
 }
 header .headerTop .miniMenu li {
   color: #97455f;
+}
+header .headerTop .navbar-default {
+  width: 100%;
+  margin-bottom: 0;
 }
 @media all and (min-width: 479px) {
   header .navbar {
@@ -99,7 +109,10 @@ header .header .input-group button:hover {
   box-shadow: 5px 10px 5px #974579;
 }
 @media all and (max-width: 480px) {
-  .headerTop {
+  .headerTop .socialIcons {
+    display: none;
+  }
+  .headerTop .miniMenu {
     display: none;
   }
   .header {
@@ -130,7 +143,7 @@ main .grid .menu li {
   line-height: 12px;
   text-align: left;
   width: 67px;
-  height: 46px;
+  height: 100%;
   text-align: center;
   transition-duration: 1s;
 }
