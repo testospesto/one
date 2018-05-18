@@ -1,6 +1,10 @@
 .container {
   width: 100%;
 }
+body {
+  background-image: url(../image/nota.png);
+  background-size: 50px 50px;
+}
 .customContainer {
   max-width: 900px;
   margin: auto;
@@ -32,21 +36,18 @@ ul {
 }
 header {
   width: 100%;
+  background-color: white;
 }
 header .headerTop {
   width: 100%;
-  border-bottom: 2px #97455f solid;
+  border-bottom: 2px #FF8C00 solid;
 }
 header .headerTop ul {
   padding-left: 0;
 }
-header .headerTop .socialIcons {
-  width: 50%;
-}
 header .headerTop .socialIcons i {
   color: #d2d2d2;
   width: 32px;
-  height: 32px;
   margin-right: 10px;
 }
 header .headerTop .miniMenu {
@@ -58,7 +59,7 @@ header .headerTop .miniMenu {
   height: 13px;
 }
 header .headerTop .miniMenu li {
-  color: #97455f;
+  color: #FF8C00;
 }
 header .headerTop .navbar-default {
   width: 100%;
@@ -92,7 +93,7 @@ header .header .input-group input {
   width: 218px;
 }
 header .header .input-group button {
-  background-color: #97455f;
+  background-color: #FF8C00;
   width: 75px;
   height: 33px;
   font-family: Georgia;
@@ -132,7 +133,7 @@ main .grid .title img {
 }
 main .grid .menu {
   height: 50px;
-  background-color: #97455f;
+  background-color: #FF8C00;
   border-radius: 10px 10px 0 0;
 }
 main .grid .menu li {
@@ -170,7 +171,6 @@ main .grid .preview .imgPreview {
   margin-right: 10px;
   height: 64px;
   width: 64px;
-  background-color: darkslategrey;
 }
 main .grid .twoArticles {
   display: grid;
@@ -224,7 +224,7 @@ main .grid .twoArticles .articalQuote img {
 main .grid .banner {
   margin-bottom: 50px;
   justify-content: space-around;
-  background-color: #97455f;
+  background-color: #FF8C00;
   width: 900px;
   height: 106px;
   color: white;
@@ -251,7 +251,7 @@ main .grid .banner p {
   height: 18px;
 }
 main .grid .banner button {
-  color: #97455f;
+  color: #FF8C00;
   background-color: #ffffff;
   width: 279px;
   height: 58px;
@@ -311,7 +311,7 @@ footer .mention2 img {
 footer .mention .mentionHeader,
 footer .mention2 .mentionHeader {
   font-family: Georgia;
-  color: #97455f;
+  color: #FF8C00;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
@@ -362,7 +362,7 @@ footer .feedback textarea {
   margin-bottom: 10px;
 }
 footer .feedback button {
-  background-color: #97455f;
+  background-color: #FF8C00;
   width: 80px;
   height: 31px;
   color: white;
