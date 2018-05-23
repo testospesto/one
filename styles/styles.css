@@ -200,7 +200,7 @@ main .grid .twoArticles .smallHeader {
   grid-area: smallHeader;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin: auto;
 }
 main .grid .twoArticles .smallHeader h3 {
@@ -284,6 +284,9 @@ main .grid .banner button {
   text-align: center;
 }
 @media all and (max-width: 480px) {
+  .title img {
+    display: none;
+  }
   .menu {
     display: none;
   }
