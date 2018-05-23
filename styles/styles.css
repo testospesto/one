@@ -77,19 +77,24 @@ header .header {
   height: 270px;
 }
 header .header .margin {
-  margin-top: 50px;
+  margin-top: 0px;
   flex-wrap: wrap;
   align-items: flex-start;
+}
+header .header .logo {
+  justify-content: center;
 }
 header .header .hLogo {
   font-family: Georgia;
   color: #FF8C00;
   font-size: 17px;
+  text-align: center;
 }
 header .header .cLogo {
   font-family: Georgia;
   color: #FF8C00;
   font-size: 13px;
+  text-align: center;
 }
 header .header .customContainer {
   width: 100%;
