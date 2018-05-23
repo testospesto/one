@@ -25,9 +25,9 @@ ul {
   height: 100%;
 }
 .buttonHover {
-  background-color: #974559;
-  border: 1px solid #974599;
-  box-shadow: 5px 10px 5px #974579;
+  background-color: #FF5b00;
+  border: 1px solid #FF8C00;
+  box-shadow: 5px 10px 5px #FF5b00;
 }
 .align {
   display: flex;
@@ -47,8 +47,8 @@ header .headerTop ul {
 }
 header .headerTop .socialIcons i {
   color: #d2d2d2;
-  width: 32px;
-  margin-right: 10px;
+  height: 32px;
+  margin-right: 20px;
 }
 header .headerTop .miniMenu {
   font-family: Georgia;
@@ -79,6 +79,17 @@ header .header {
 header .header .margin {
   margin-top: 50px;
   flex-wrap: wrap;
+  align-items: flex-start;
+}
+header .header .hLogo {
+  font-family: Georgia;
+  color: #FF8C00;
+  font-size: 17px;
+}
+header .header .cLogo {
+  font-family: Georgia;
+  color: #FF8C00;
+  font-size: 13px;
 }
 header .header .customContainer {
   width: 100%;
@@ -105,9 +116,9 @@ header .header .input-group button {
   transition-duration: 1s;
 }
 header .header .input-group button:hover {
-  background-color: #974559;
-  border: 1px solid #974599;
-  box-shadow: 5px 10px 5px #974579;
+  background-color: #FF5b00;
+  border: 1px solid #FF8C00;
+  box-shadow: 5px 10px 5px #FF5b00;
 }
 @media all and (max-width: 480px) {
   .headerTop .socialIcons {
@@ -137,7 +148,7 @@ main .grid .menu {
   border-radius: 10px 10px 0 0;
 }
 main .grid .menu li {
-  font-family: Georgia;
+  font-family: Georgia sans-serif;
   color: #ffffff;
   font-size: 12px;
   font-weight: 400;
@@ -149,9 +160,9 @@ main .grid .menu li {
   transition-duration: 1s;
 }
 main .grid .menu li:hover {
-  background-color: #974559;
-  border: 1px solid #974599;
-  box-shadow: 5px 10px 5px #974579;
+  background-color: #FF5b00;
+  border: 1px solid #FF8C00;
+  box-shadow: 5px 10px 5px #FF5b00;
 }
 main .grid .bigTitle {
   margin: 40px auto;
@@ -172,6 +183,9 @@ main .grid .preview .imgPreview {
   height: 64px;
   width: 64px;
 }
+main .grid .preview .imgPreview i {
+  color: #FF8C00;
+}
 main .grid .twoArticles {
   display: grid;
   grid-template: 50px 200px / 1fr 1fr;
@@ -183,6 +197,9 @@ main .grid .twoArticles .smallHeader {
   flex-direction: row;
   flex-wrap: nowrap;
   margin: auto;
+}
+main .grid .twoArticles .smallHeader h3 {
+  margin: -10px 3px;
 }
 main .grid .twoArticles .smallHeader img {
   width: 150px;
@@ -210,8 +227,11 @@ main .grid .twoArticles .smallHeader2 {
   flex-wrap: nowrap;
   margin: auto;
 }
+main .grid .twoArticles .smallHeader2 h3 {
+  margin: -10px 1px 0 1px;
+}
 main .grid .twoArticles .smallHeader2 img {
-  width: 150px;
+  width: 30%;
   height: 5px;
 }
 main .grid .twoArticles .articalQuote {
@@ -230,15 +250,10 @@ main .grid .banner {
   color: white;
   border-radius: 10px;
 }
-main .grid .banner h3 {
+main .grid .banner h4 {
   font-family: Georgia;
   color: #e5e5e5;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 43.2px;
   text-align: left;
-  width: 515px;
-  height: 36px;
 }
 main .grid .banner p {
   font-family: Georgia;
